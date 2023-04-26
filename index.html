@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a cat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>¡Adopt your cat!</h1>
+  </header>
+  <span id="error"></span>
+  <section id="randoms-cats">
+
+    <h2 class="random-cats-title">Gatitos aleatorios</h2>
+
+    <div class="container-cats">
+      <div class="cat-info">
+        <img width="150px" height="150px" id="img1" alt="Foto de gatito random">
+        <button>Guardar en favorito</button>
+      </div>
+      <div class="cat-info">
+        <img width="150px" height="150px" id="img2" alt="Foto de gatito random">
+        <div>
+          <button>Guardar en favorito</button>
+        </div>
+      </div>
+    </div>
+    <button onclick="myCat()">Mostrar otros gatitos</button>
+  </section>
+
+  <section id="favorites-cats">
+    <h2>Gatitos favoritos</h2>
+    <div>
+      <img alt="Foto de gatito random">
+      <button>Quitar de favorito</button>
+    </div>
+  </section>
+<script src="./main.js"></script>
+</body>
+</html>
