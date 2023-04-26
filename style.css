@@ -27,7 +27,7 @@ h1 {
   -webkit-background-clip: text;
 }
 
-#randoms-cats {
+.randoms-cats {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,29 +46,60 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
-.cat-info img {
+.cat-info .cat {
+  position: relative;
   box-shadow: 0px 0px 4px rgb(30, 30, 30);
   background-size: cover;
   border-radius: 2px;
 }
-.cat-info button {
-  transition: all 400ms;
-  font-weight: 400;
+.favorite-cat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  background-color: #f0eeee;
   border: none;
   padding: 5px;
-  border-radius: 4px;
-  margin-top: 10px;
-}
-.cat-info button:hover {
-  transition: all 400ms;
-  font-weight: 300;
-  color: white;
+  margin: 10px;
   cursor: pointer;
-  background-color: rgb(4, 113, 255);
+  transition: all .3s linear;
+  position: relative;
 }
-
+.icon {
+  transition: all 200ms ease;
+  width: 15px;
+}
+.icon:hover {
+  transition: all 200ms ease;
+  filter: invert(15%) sepia(58%) saturate(6826%) hue-rotate(356deg) brightness(100%) contrast(116%);
+}
+.show-random-cat-btn {
+  border: 1px solid transparent;
+  transition: all.3s;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: 10px;
+  color: rgb(10, 10, 10);
+  background-color: #ffffff;
+}
+.show-random-cat-btn:hover {
+  font-weight: 400;
+  transition: all .3s ease-in-out;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.none {
+  display: none;
+}
 span {
   display: flex;
   align-items: center;
@@ -78,4 +109,8 @@ span {
 span h2 {
   color: rgba(236, 13, 13, 0.925);
   font-weight: 400;
+}
+
+#favorites-cats {
+  display: none;
 }
