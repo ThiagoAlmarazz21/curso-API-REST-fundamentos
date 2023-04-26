@@ -36,40 +36,35 @@ h1 {
 
 .container-cats {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .cat-info {
   border-radius: 2px;
+  position: relative;
   margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .cat-info .cat {
-  position: relative;
   box-shadow: 0px 0px 4px rgb(30, 30, 30);
   background-size: cover;
   border-radius: 2px;
 }
 .favorite-cat {
+  position: absolute;
+  top: 110px;
+  left: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  position: absolute;
-  left: -50px;
-  top: 50px;
   background-color: #f0eeee;
   border: none;
-  padding: 5px;
-  margin: 10px;
   cursor: pointer;
   transition: all .3s linear;
-  position: relative;
 }
 .icon {
   transition: all 200ms ease;
