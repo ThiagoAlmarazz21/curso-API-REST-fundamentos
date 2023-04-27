@@ -6,23 +6,33 @@
 }
 
 body {
-  background-color: rgb(4, 163, 255);
+  max-width: 1200px;
+  background-color: rgb(245, 245, 245);
 }
 
-header {
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 40px;
+  height: 250px;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(0,0,0,0.2)) ,url('./assets/hero\ 5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 h1 {
-  color: #fafafa;
-  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+  font-size: 38px;
 }
 .random-cats-title {
-  font-size: 38px;
+  margin-top: 50px;
+  font-size: 30px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #4f11fa 0%, #91f7688e 50%, #c01414 70%);  
+  background-image: linear-gradient(62deg, #4f11fa 0%, #47c914de 50%, #c01414 70%);  
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -39,7 +49,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .cat-info {
@@ -54,8 +63,8 @@ h1 {
 }
 .favorite-cat {
   position: absolute;
-  top: 110px;
-  left: 110px;
+  top: 160px;
+  left: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,37 +85,43 @@ h1 {
   filter: invert(15%) sepia(58%) saturate(6826%) hue-rotate(356deg) brightness(100%) contrast(116%);
 }
 .show-random-cat-btn {
-  border: 1px solid transparent;
+  margin-bottom: 50px;
+  border: 2px solid transparent;
   transition: all.3s;
   cursor: pointer;
   font-weight: 400;
-  padding: 5px;
+  padding: 10px;
   border-radius: 50px;
   margin-top: 10px;
-  color: rgb(10, 10, 10);
-  background-color: #ffffff;
+  color: rgb(228, 228, 228);
+  background-color: #363636;
 }
 .show-random-cat-btn:hover {
   font-weight: 400;
   transition: all .3s ease-in-out;
   background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  color: #363636;
+  border: 2px solid #363636;
 }
-.none {
+
+#favorites-cats {
   display: none;
 }
-span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 span h2 {
   color: rgba(236, 13, 13, 0.925);
   font-weight: 400;
 }
 
-#favorites-cats {
-  display: none;
+@media (max-width: 425px) {
+  h1 {
+    text-align: center;
+  }
+
+  .container-cats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }

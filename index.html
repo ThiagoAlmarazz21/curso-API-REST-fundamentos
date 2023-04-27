@@ -12,32 +12,34 @@
 </head>
 <body>
   <header>
-    <h1>¡Adopt your cat!</h1>
+    <div class="hero">
+      <h1>¡ADOPTAR ES GRATIS!</h1>
+    </div>
   </header>
   <span id="error"></span>
   <section class="randoms-cats">
 
-    <h2 class="random-cats-title">Gatitos aleatorios</h2>
+    <h2 class="random-cats-title">GATITOS EN ADOPCION</h2>
 
     <div class="container-cats">
       <div class="cat-info">
-        <img class="cat" width="150px" height="150px" id="img1" alt="Foto de gatito random">
-        <button class="favorite-cat" onclick="saveFavouriteCats()"><img class="icon" src="./assets/like (2).png" alt=""></button>
+        <img class="cat" width="200px" height="200px" id="img1" alt="Foto de gatito random">
+        <button id="btn1" class="favorite-cat"><img class="icon" src="./assets/like (2).png" alt=""></button>
       </div>
       <div class="cat-info">
-        <img class="cat" width="150px" height="150px" id="img2" alt="Foto de gatito random">
-        <button class="favorite-cat" onclick="saveFavouriteCats()"><img class="icon" src="./assets/like (2).png" alt=""></button>
+        <img class="cat" width="200px" height="200px" id="img2" alt="Foto de gatito random">
+        <button id="btn2" class="favorite-cat"><img class="icon" src="./assets/like (2).png" alt=""></button>
       </div>
     </div>
-    <button class="show-random-cat-btn" onclick="loadRandomCats()">Mostrar otros gatitos</button>
+    <button class="show-random-cat-btn" onclick="loadRandomMichis()">MOSTRAR OTROS GATITOS</button>
   </section>
 
   <section id="favorites-cats">
     <h2>Gatitos favoritos</h2>
-    <div>
-      <img alt="Foto de gatito random">
-      <button>Quitar de favorito</button>
-    </div>
+      <div class="cat-info">
+        <img class="cat" width="150px" height="150px" id="img1" alt="Foto de gatito random">
+        <button id="btn1"><img class="icon" src="./assets/like (2).png" alt=""></button>
+      </div>
   </section>
 <script src="./main.js"></script>
 </body>
