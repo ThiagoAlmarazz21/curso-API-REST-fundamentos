@@ -62,8 +62,8 @@ h1 {
 }
 .favorite-cat {
   position: absolute;
-  top: 160px;
-  left: 160px;
+  top: 240px;
+  left: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
