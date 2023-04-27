@@ -62,14 +62,14 @@ h1 {
 }
 .favorite-cat {
   position: absolute;
-  top: 160px;
-  left: 160px;
+  top: 240px;
+  left: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
   background-color: #f0eeee;
   border: none;
   cursor: pointer;
@@ -77,18 +77,20 @@ h1 {
 }
 .icon {
   transition: all 200ms ease;
-  width: 15px;
+  width: 30px;
 }
 .icon:hover {
   transition: all 200ms ease;
   filter: invert(15%) sepia(58%) saturate(6826%) hue-rotate(356deg) brightness(100%) contrast(116%);
 }
 .show-random-cat-btn {
+  width: 300px;
   margin-bottom: 50px;
   border: 2px solid transparent;
   transition: all.3s;
   cursor: pointer;
   font-weight: 400;
+  font-size: 20px;
   padding: 10px;
   border-radius: 50px;
   margin-top: 10px;
@@ -112,15 +114,16 @@ span h2 {
   font-weight: 400;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 660px) {
   h1 {
     text-align: center;
   }
-
+  
   .container-cats{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
+
 }
