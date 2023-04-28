@@ -19,7 +19,7 @@
   <span id="error"></span>
   <section class="randoms-cats">
 
-    <h2 class="random-cats-title">GATITOS EN ADOPCION</h2>
+    <h2 class="random-cats-title">GATITOS EN ADOPCIÓN</h2>
 
     <div class="container-cats">
       <div class="cat-info">
@@ -41,6 +41,17 @@
         <button id="btn1"><img class="icon" src="./assets/like (2).png" alt=""></button>
       </div>
   </section>
+
+  <section id="uploadingMichis">
+    <h2>Sube una foto de tu michi</h2>
+
+    <form id="uploadingForm">
+      <input id="file" type="file" name="file">
+      <button class="form-btn" type="button" onclick="uploadMichiPhoto()">Enviar foto</button>
+    </form>
+
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>

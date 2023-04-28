@@ -15,15 +15,15 @@ body {
   justify-content: center;
   width: 100%;
   height: 250px;
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(0,0,0,0.2)) ,url('./assets/hero\ 5.jpg');
+  background-image: linear-gradient(0deg, rgba(0,0,0, 0.3), rgba(0,0,0,0.3)) ,url('./assets/hero\ 5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 h1 {
   font-weight: 400;
-  color: #000;
-  font-size: 38px;
+  color: white;
+  font-size: 40px;
 }
 .random-cats-title {
   margin-top: 50px;
@@ -68,8 +68,8 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background-color: #f0eeee;
   border: none;
   cursor: pointer;
@@ -105,14 +105,63 @@ h1 {
   border: 2px solid #363636;
 }
 
-#favorites-cats {
-  display: none;
-}
-
 span h2 {
   color: rgba(236, 13, 13, 0.925);
   font-weight: 400;
 }
+
+#favorites-cats {
+  display: none;
+}
+
+#uploadingMichis {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: 
+  linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3))
+  ,url('./assets/hero\ 4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#uploadingMichis h2 {
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+}
+#uploadingForm {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#file {
+  margin-bottom: 30px;
+}
+.form-btn {
+  border: none;
+  transition: all.2s;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 10px;
+  color: rgb(228, 228, 228);
+  background-color: #363636;
+}
+.form-btn:hover {
+  font-weight: 400;
+  transition: all .2s ease-in-out;
+  background-color: #181818;
+}
+
+
 
 @media (max-width: 660px) {
   h1 {
@@ -124,6 +173,9 @@ span h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  #uploadingMichis h2{
+    text-align: center;
   }
 
 }
