@@ -73,19 +73,19 @@ async function loadFavouriteMichis() {
 }
 
 async function saveFavouriteMichi(id) {
-  const res = await api.post();
+  // const res = await api.post();
 
-  // const res = await fetch(API_URL_FAVORITES, {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //     'X-API-KEY': API_KEY,
-  //   },
-  //   body: JSON.stringify({
-  //     image_id: id
-  //   }),
-  // });
-  // const data = await res.json();
+  const res = await fetch(API_URL_FAVORITES, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-API-KEY': API_KEY,
+    },
+    body: JSON.stringify({
+      image_id: id
+    }),
+  });
+  const data = await res.json();
 
   console.log('Save')
   console.log(res)
