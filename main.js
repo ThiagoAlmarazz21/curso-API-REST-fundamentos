@@ -1,7 +1,7 @@
-const api = axios.create({
-  baseURL: 'https://api.thecatapi.com/v1/',
-});
-api.defaults.headers.common['X-API-KEY'] = 'live_dAC5pYW8RKo61DifwfduOeyDv95rvy2Hen2TkK3W7bKXw4ATVdwsBdEa2lV5ZrW9';
+// const api = axios.create({
+//   baseURL: 'https://api.thecatapi.com/v1/',
+// });
+// api.defaults.headers.common['X-API-KEY'] = 'live_dAC5pYW8RKo61DifwfduOeyDv95rvy2Hen2TkK3W7bKXw4ATVdwsBdEa2lV5ZrW9';
 
 const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=2';
 const API_URL_FAVORITES = 'https://api.thecatapi.com/v1/favourites';
